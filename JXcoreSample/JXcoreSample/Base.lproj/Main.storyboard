@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E36b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="interactive" text="Share something here" translatesAutoresizingMaskIntoConstraints="NO" id="Q5m-bu-tx4">
+                                <rect key="frame" x="16" y="63" width="382" height="271"/>
+                                <color key="backgroundColor" red="0.96768787949892532" green="1" blue="0.98356734663362932" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Q5m-bu-tx4" secondAttribute="height" multiplier="382:271" id="UhX-6a-XRC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="URL to visit : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWA-Vf-KEG" customClass="labelURL">
+                                <rect key="frame" x="14" y="351" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.35323430014321888" green="0.51587873979821453" blue="0.72658222853535359" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="......." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wd-se-aDa" customClass="labelURL">
+                                <rect key="frame" x="14" y="380" width="259" height="22"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.35323430010000001" green="0.51587873979999999" blue="0.72658222849999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Say Something!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7M-HD-AJo">
+                                <rect key="frame" x="16" y="24" width="263" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.28627450980392155" green="0.43529411764705883" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrJ-I3-GTD">
+                                <rect key="frame" x="297" y="350" width="101" height="30"/>
+                                <color key="backgroundColor" red="0.88594445682044742" green="0.92735976492869876" blue="0.89629828384751031" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Update HMTL">
+                                    <color key="titleColor" red="0.22745098039215686" green="0.35294117647058826" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnUpdate:" destination="BYZ-38-t0r" eventType="touchDown" id="rlj-si-blQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="......." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXf-bJ-Adz" customClass="labelURL">
+                                <rect key="frame" x="14" y="410" width="259" height="22"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.35323430010000001" green="0.51587873979999999" blue="0.72658222849999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" editable="NO" text="Visit Above URL(s) from other device / browser and see the html defined from the textbox above.  " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jy-mC-Nzi" customClass="textStory">
+                                <rect key="frame" x="16" y="440" width="382" height="53"/>
+                                <color key="backgroundColor" red="0.93441487001549328" green="1" blue="0.92411074330495713" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="go"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" editable="NO" text="Click [Update HTML] above to update the HTML" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJs-5w-l1o" customClass="textStory">
+                                <rect key="frame" x="16" y="501" width="382" height="53"/>
+                                <color key="backgroundColor" red="0.93441487000000001" green="1" blue="0.92411074329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="go"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93345305163961012" green="0.96731422682709445" blue="0.94830113885083811" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q5m-bu-tx4" firstAttribute="top" secondItem="K7M-HD-AJo" secondAttribute="bottom" constant="8" id="04A-zB-aN3"/>
+                            <constraint firstItem="5wd-se-aDa" firstAttribute="top" secondItem="JWA-Vf-KEG" secondAttribute="bottom" constant="8" id="0KQ-0E-2V7"/>
+                            <constraint firstItem="hXf-bJ-Adz" firstAttribute="top" secondItem="5wd-se-aDa" secondAttribute="bottom" constant="8" id="1p8-FY-zNU"/>
+                            <constraint firstItem="VrJ-I3-GTD" firstAttribute="top" secondItem="Q5m-bu-tx4" secondAttribute="bottom" constant="16" id="8yp-eX-OS6"/>
+                            <constraint firstItem="PJs-5w-l1o" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LFO-bw-i8N"/>
+                            <constraint firstItem="K7M-HD-AJo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LLl-i5-bls"/>
+                            <constraint firstItem="PJs-5w-l1o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LzM-fp-6ZR"/>
+                            <constraint firstItem="8Jy-mC-Nzi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OxZ-9P-Oh3"/>
+                            <constraint firstItem="JWA-Vf-KEG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="Pio-gY-ggg"/>
+                            <constraint firstItem="5wd-se-aDa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="Pma-WO-hcI"/>
+                            <constraint firstItem="JWA-Vf-KEG" firstAttribute="top" secondItem="Q5m-bu-tx4" secondAttribute="bottom" constant="16" id="Ubg-SO-MXb"/>
+                            <constraint firstItem="VrJ-I3-GTD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Wbo-UZ-fJU"/>
+                            <constraint firstItem="8Jy-mC-Nzi" firstAttribute="top" secondItem="hXf-bJ-Adz" secondAttribute="bottom" constant="8" id="Xly-Yd-2v9"/>
+                            <constraint firstItem="Q5m-bu-tx4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ysm-xU-K4p"/>
+                            <constraint firstItem="hXf-bJ-Adz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="c6R-14-A1G"/>
+                            <constraint firstItem="8Jy-mC-Nzi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jQd-er-mWA"/>
+                            <constraint firstItem="K7M-HD-AJo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="jnq-lf-juA"/>
+                            <constraint firstItem="PJs-5w-l1o" firstAttribute="top" secondItem="8Jy-mC-Nzi" secondAttribute="bottom" constant="8" id="kIW-ii-L0Y"/>
+                            <constraint firstItem="K7M-HD-AJo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="mzK-1S-vLx"/>
+                            <constraint firstItem="Q5m-bu-tx4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yP2-w2-izZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jnq-lf-juA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="lblTitle" destination="K7M-HD-AJo" id="Ngx-Pe-kyO"/>
+                        <outlet property="lblURL" destination="5wd-se-aDa" id="ifA-3X-JkS"/>
+                        <outlet property="lblURL2" destination="hXf-bJ-Adz" id="gJQ-Ki-1qN"/>
+                        <outlet property="txtStory" destination="Q5m-bu-tx4" id="7Iw-3O-YOH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450" y="399"/>
+        </scene>
+    </scenes>
+</document>
