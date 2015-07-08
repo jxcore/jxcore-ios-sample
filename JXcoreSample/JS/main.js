@@ -296,9 +296,14 @@ var loadMainFile = function (filePath) {
     require(path.join(process.cwd(), filePath));
   } catch (e) {
     Error.captureStackTrace(e);
-    console.error("loadMainFile", e.message, e.stack);
+    JXmobile('OnError').call(e.message, JSON.stringify(e.stack));
   }
 };
+
+process.on('uncaughtException', function (e) {
+  Error.captureStackTrace(e);
+  JXmobile('OnError').call(e.message, JSON.stringify(e.stack));
+});
 
 JXmobile('StartApplication').register(loadMainFile);
  

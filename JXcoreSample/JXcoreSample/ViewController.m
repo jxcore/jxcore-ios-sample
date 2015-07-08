@@ -47,6 +47,14 @@ static bool initialized = false;
     [JXcore callEventCallback:callbackId withJSON:[NSString stringWithFormat:@"%f", (float)br]];
   } withName:@"ScreenBrightness"];
   
+  // Listen to Errors on the JS land
+  [JXcore addNativeBlock:^(NSArray *params, NSString *callbackId) {
+    NSString *errorMessage = (NSString*)[params objectAtIndex:0];
+    NSString *errorStack = (NSString*)[params objectAtIndex:1];
+    
+    NSLog(@"Error!: %@\nStack:%@\n", errorMessage, errorStack);
+  } withName:@"OnError"];
+  
   
   // Second native method for JS side
   [JXcore addNativeBlock:^(NSArray *params, NSString *callbackId) {
