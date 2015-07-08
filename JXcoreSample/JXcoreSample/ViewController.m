@@ -64,7 +64,7 @@ static bool initialized = false;
     NSString* ipaddress = [params objectAtIndex:0];
     NSString* ipaddress2 =  nil;
     
-    if ([params count] > 1)
+    if ([params count] > 2)
       ipaddress2 = [params objectAtIndex:1];
     
     dispatch_async(dispatch_get_main_queue(), ^{
